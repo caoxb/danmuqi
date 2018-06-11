@@ -1,0 +1,30 @@
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+
+    mavenLocal()
+
+    maven {
+        url "http://maven.aliyun.com/nexus/content/repositories/releases"
+    }
+
+    maven {
+        url "http://maven.aliyun.com/nexus/content/repositories/snapshots"
+    }
+
+    jcenter()
+
+    google()
+}
+
+dependencies {
+    /* AEP自有SDK.begin */
+    implementation 'com.aliyun.iot.aep.sdk:sdk-framework:0.0.1@aar'
+    implementation 'com.aliyun.iot.aep.sdk:threadpool:0.0.3@aar'
+    implementation 'com.android.support:multidex:1.0.1'
+    /* AEP自有SDK.end */
+
+    implementation 'com.aliyun.iot.aep.sdk:apiclient:0.0.1'
+
+}

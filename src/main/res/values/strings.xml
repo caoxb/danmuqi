@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">danmuqi_v1</string>
+    <string name="temp">温度：%1$.1f℃</string>
+</resources>
